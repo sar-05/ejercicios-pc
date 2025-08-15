@@ -1,0 +1,4 @@
+Administrator: Estado = False
+DefaultAccount: Estado = False
+Guest: Estado = False
+WDAGUtilityAccount: Estado = False

@@ -1,0 +1,108 @@
+Script started on 2025-08-07 14:35:26-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="209" LINES="51"]
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m echo "Exploración Kali Linux - Usuario $(whoami)"
+[?2004lExploración Kali Linux - Usuario sar
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m date
+[?2004lThu Aug  7 02:35:59 PM CST 2025
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m hostname
+[?2004lAula403-23
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m uname -a
+[?2004lLinux Aula403-23 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 GNU/Linux
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m whoami
+[?2004lsar
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m pwd
+[?2004l/home/sar
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m ls -l
+[?2004ltotal 0
+-rw-r--r-- 1 sar sar 0 Aug  7 14:35 evidencia_kali.txt
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m df -h
+[?2004lFilesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         931G   65G  866G   7% /usr/lib/wsl/drivers
+/dev/sdd       1007G  789M  955G   1% /
+none            1.9G   72K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.7M  1.9G   1% /init
+none            1.9G     0  1.9G   0% /dev
+none            1.9G  436K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             931G   65G  866G   7% /mnt/c
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/console-getty.service
+tmpfs           1.9G  4.0K  1.9G   1% /run/user/1000
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m free -m
+[?2004l               total        used        free      shared  buff/cache   available
+Mem:            3781         329        3236           3         285        3451
+Swap:           1024           0        1024
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m ip a
+[?2004l1: [1;36mlo: [0m<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback [1;33m00:00:00:00:00:00[0m brd [1;33m00:00:00:00:00:00[0m
+    inet [1;35m127.0.0.1[0m/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet [1;35m10.255.255.254[0m/32 brd [1;35m10.255.255.254 [0mscope global lo
+       valid_lft forever preferred_lft forever
+    inet6 [1;94m::1[0m/128 scope host proto kernel_lo 
+       valid_lft forever preferred_lft forever
+2: [1;36meth0: [0m<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state [1;32mUP [0mgroup default qlen 1000
+    link/ether [1;33m00:15:5d:ff:e0:a4[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    inet [1;35m192.168.108.131[0m/20 brd [1;35m192.168.111.255 [0mscope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 [1;94mfe80::215:5dff:feff:e0a4[0m/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m ip route
+[?2004ldefault via [1;35m192.168.96.1 [0mdev [1;36meth0 [0mproto kernel 
+[1;35m192.168.96.0/20 [0mdev [1;36meth0 [0mproto kernel scope link src [1;35m192.168.108.131 [0m
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m nsloo[K[K[K[K[Kip routea[Kfree -m[C[C[C[C[2Pdf -hls -l[2Ppwdwhoami[C[C[C[Cuname -a[C[C[C[Chostname[C[C[C[C[4Pdateecho "Exploración Kali Linux - Usuario $(whoami)"[C[C[C[C[Cxit[Ktiitcho "Exploración Kali Linux - Usuario $(whoami)"[C[C[C[Cdate[Khostname[C[C[C[Cuname -a[C[C[C[C[2Pwhoami[C[C[C[C[3Ppwdls -ldf -hfree -m[C[C[C[C[3Pip aroute[C[C[C[C[Knslookup www.microsoft.com
+[?2004lServer:		10.255.255.254
+Address:	10.255.255.254#53
+
+Non-authoritative answer:
+www.microsoft.com	canonical name = www.microsoft.com-c-3.edgekey.net.
+www.microsoft.com-c-3.edgekey.net	canonical name = www.microsoft.com-c-3.edgekey.net.globalredir.akadns.net.
+www.microsoft.com-c-3.edgekey.net.globalredir.akadns.net	canonical name = e13678.dscb.akamaiedge.net.
+Name:	e13678.dscb.akamaiedge.net
+Address: 23.49.54.10
+Name:	e13678.dscb.akamaiedge.net
+Address: 2600:141c:f000:1af::356e
+Name:	e13678.dscb.akamaiedge.net
+Address: 2600:141c:f000:183::356e
+Name:	e13678.dscb.akamaiedge.net
+Address: 2600:141c:f000:184::356e
+Name:	e13678.dscb.akamaiedge.net
+Address: 2600:141c:f000:1a5::356e
+Name:	e13678.dscb.akamaiedge.net
+Address: 2600:141c:f000:185::356e
+
+
+[?2004h]0;sar@Aula403-23: ~[;32m┌──([1;34msar㉿Aula403-23[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m exit
+[?2004lexit
+
+Script done on 2025-08-07 14:37:26-06:00 [COMMAND_EXIT_CODE="0"]
