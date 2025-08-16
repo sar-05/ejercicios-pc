@@ -34,3 +34,7 @@ imprime el resultado en pantalla
 
 Contiene el módulo `BasicAudit.psm1` que ofrece herramientas básicas de
 auditoría. Este modulo es puesto a prueba en el script `main.ps1`
+
+### Ejercicio 7
+
+Script `test.ps1` con comentario como referencia
