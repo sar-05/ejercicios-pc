@@ -84,9 +84,9 @@ if response.status_code == 200:
                                 detalle.get('Title'),
                                 detalle.get('Domain'),
                                 detalle.get('BreachDate'),
-                                detalle.get('AddedDate'),
                                 ','.join(detalle.get('DataClasses', [])),
-                                detalle.get('Description')[:300]
+                                detalle.get('IsVerified'),
+                                detalle.get('IsSensitive')
                             ])
                 print(f"Se ha guardado las brecha {i+1} en reporte.csv")
                 print("-" * 60)
